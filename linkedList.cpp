@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 /*
     int x; //4byte to store address of next element
     int a[3];
@@ -5,17 +8,19 @@
 */
 
 //only forward traversal is possible
-
-struct node
+int main()
 {
-    int a;
-    struct node* next;
-};
 
-struct node* head;
-head = 0 ;
+        struct node
+            {
+                int a;
+                struct node* next;
+            };
 
-int* p = new struct node;
+        struct node* head;
+        head = 0 ;
+
+        int* p = new struct node;
         int* t = new struct node; 
         int* r = new struct node;  
 
@@ -32,3 +37,9 @@ int* p = new struct node;
 // p = new int (10);
 cout << "enter data";
 cin >>
+
+
+
+}
+
+
